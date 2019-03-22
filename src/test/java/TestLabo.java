@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestLabo {
 
+    // test pour le franc
     @Test
     public void testFrancMultiplication(){
         Franc five = new Franc(5);
@@ -15,6 +16,7 @@ public class TestLabo {
 
     }
 
+    // test pour le dollar
     @Test
     public void testDollarMultiplication(){
         Dollar five = new Dollar(5);
@@ -23,6 +25,15 @@ public class TestLabo {
 
     }
 
+    // test pour Money
+    @Test
+    public void testMultiplication(){
+        Money five = Money.dollar(5);
+        assertEquals(new Dollar(10),five.times(2));
+        assertEquals(new Dollar(15), five.times(3));
+    }
+
+    // test pour Money
     @Test
     public void testEquality(){
         assertTrue(new Dollar(5).equals(new Dollar(5)));
