@@ -1,5 +1,6 @@
 abstract class Money {
     abstract Money times(int multiplier);
+    abstract String currency();
 
     protected int amount;
 
