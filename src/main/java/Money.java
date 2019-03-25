@@ -1,6 +1,7 @@
 abstract class Money {
+    protected String currency;
+
     abstract Money times(int multiplier);
-    abstract String currency();
 
     protected int amount;
 
@@ -16,4 +17,9 @@ abstract class Money {
         Money money = (Money)o;
         return amount == money.amount && getClass().equals(money.getClass());
     }
+
+    String currency(){
+        return currency;
+    }
+
 }
