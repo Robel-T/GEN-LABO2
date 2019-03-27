@@ -66,13 +66,15 @@ public class TestLabo {
     @Test
     public void testReduceMoneyDifferentCurrency(){
         Bank bank = new Bank();
-        //bank.addRate("CHF","USD",2);
+      //  bank.addRate("CHF","USD",2);
         Money result = bank.reduce(Money.franc(2),"USD");
         assertEquals(Money.dollar(1), result);
     }
 
-    @Test
+  /*  @Test
     public void testArrayEquals(){
-        //assertEquals(new Object[]{"abc"},new Object[]{"abc"});
-    }
+        assertEquals(new Object[]{"abc"},new Object[]{"abc"}); // j ai mis en commentaire car le prof
+                                                                    car le prof nous l a dit de le faire pour faire
+                                                                    passer les tests
+    }*/
 }
