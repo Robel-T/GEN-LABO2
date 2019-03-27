@@ -11,4 +11,8 @@ public class Pair {
         Pair pair = (Pair) o;
         return from.equals(pair.from) & to.equals(pair.to);
     }
+
+    public int hashCode(){
+        return 0;
+    }
 }
