@@ -12,6 +12,10 @@ class Money {
         this.currency = currency;
     }
 
+    Money plus(Money addend){
+        return new Money(amount + addend.amount, currency);
+    }
+
     static Money dollar(int amount){
         return new Money(amount, "USD");
     }
@@ -25,11 +29,13 @@ class Money {
         return amount == money.amount && currency().equals(money.currency());
     }
 
-    String currency(){
+    public String currency(){
         return currency;
     }
 
     public String toString(){
         return amount + " " + currency;
     }
+
+
 }
