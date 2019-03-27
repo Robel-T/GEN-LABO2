@@ -76,6 +76,16 @@ public class TestLabo {
         assertEquals(Money.dollar(1), result);
     }
 
+    @Test
+    public void testMixedAddition(){
+        Money fiveBucks = Money.dollar(5);
+        Money tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF","USD",2);
+        Money result = bank.reduce(((Money) fiveBucks).plus(tenFrancs),"USD");
+        assertEquals(Money.dollar(10),result);
+    }
+
   /*  @Test
     public void testArrayEquals(){
         assertEquals(new Object[]{"abc"},new Object[]{"abc"}); // j ai mis en commentaire car le prof
