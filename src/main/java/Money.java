@@ -14,7 +14,7 @@ class Money implements Expression{
 
     public Expression plus(Expression addend){
         return new Sum(this, addend);
-    } 
+    }
 
     static Money dollar(int amount){
         return new Money(amount, "USD");

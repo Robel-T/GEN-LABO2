@@ -111,10 +111,5 @@ public class TestLabo {
         Expression sum = Money.dollar(1).plus(Money.dollar(1));
         assertTrue(sum instanceof Money);
     }
-  /*  @Test
-    public void testArrayEquals(){
-        assertEquals(new Object[]{"abc"},new Object[]{"abc"}); // j ai mis en commentaire car le prof
-                                                                    car le prof nous l a dit de le faire pour faire
-                                                                    passer les tests
-    }*/
+
 }
