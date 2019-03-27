@@ -7,5 +7,8 @@ public class Pair {
         this.to = to;
     }
 
-
+    public boolean equals(Object o){
+        Pair pair = (Pair) o;
+        return from.equals(pair.from) & to.equals(pair.to);
+    }
 }
