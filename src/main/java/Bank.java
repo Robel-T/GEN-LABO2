@@ -1,3 +1,5 @@
+import com.sun.tools.corba.se.idl.InterfaceGen;
+
 import java.util.Hashtable;
 
 public class Bank {
@@ -9,7 +11,10 @@ public class Bank {
     }
 
     int rate(String from, String to){
-        return (from.equals("CHF") & to.equals("USD")) ? 2 :1;
+        if(from.equals(to))
+            return 1;
+        Integer rate = (Integer)rates.get(new Pair(from,to));
+        return rate.intValue();
     }
 
     void addRate(String from, String to, int rate){
