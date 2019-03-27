@@ -37,5 +37,7 @@ class Money implements Expression{
         return amount + " " + currency;
     }
 
-
+    public Money reduce(String to){
+        return this;
+    }
 }
