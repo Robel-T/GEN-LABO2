@@ -20,4 +20,4 @@
   
 
 # Lien WIKI
-https://github.com/Robel-T/GEN-LABO2.wiki.git
+https://github.com/Robel-T/GEN-LABO2/wiki/GEN---LAB2
