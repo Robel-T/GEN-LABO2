@@ -18,3 +18,6 @@
 # Conclusion
   Ce labo nous a permis de mieux appréhender github et avoir de bonne base sur comment créer des classes et avoir des classes tests.
   
+
+# Lien WIKI
+https://github.com/Robel-T/GEN-LABO2.wiki.git
